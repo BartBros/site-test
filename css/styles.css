@@ -1,0 +1,264 @@
+/* ------- FONTS ------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.display-1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.display-3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+/* ------- SECTION 1 ------- */
+
+#section1 {
+    display: flex;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(25, 28, 35, 0.8);
+    background-image: url('../img/bg-3.jpg');
+    background-blend-mode: multiply;
+}
+
+
+
+.heading-text {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.next-arrow {
+    filter: contrast(.75);
+    width: 100px;
+}
+
+
+/* ------- SECTION 2 ------- */
+
+
+#section2 {
+    display: flex;
+    min-height: 100vh;
+    background: #20232C;
+    color: rgb(159, 176, 223);
+    font-size: 5vw;
+}
+
+.nav-link:hover {
+    letter-spacing: .05em;
+    transform: scale(1.1);
+    color: green;
+    transition: 1.5s;
+}
+
+
+
+/* ------- SECTION 3 ------- */
+
+#section3 {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    color: rgb(159, 176, 223);
+    font-size: 5vw;
+    background-color: #191c23;
+}
+
+#back {
+    transform: rotate(90deg);
+    position: absolute;
+    top: .5em;
+    left: .5em;
+}
+
+/* ------- SECTION 4 ------- */
+
+#section4 {
+    padding-top: 5em;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: normal;
+    background-color: #191c23;
+    /* background-image: url('../img/bg-22.jpg'); */
+}
+
+#langs .card {
+    background: transparent;
+    border: none;
+    filter: opacity(0.5);
+    filter: grayscale(50%);
+
+}
+
+#langs .card:hover {
+    transition: 0.5s;
+    filter: opacity(1);
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    
+}
+
+#langs .card-body {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+}
+
+
+
+
+/* ------- SECTION 5 ------- */
+#section5 {
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section5 .row {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.project-column {
+    padding: 0;
+}
+
+.project-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 34, 91, 0.9);
+}
+
+.project-title {
+    padding-bottom: .5em;
+    border-bottom: 1px solid white;
+}
+
+.project-link {
+    display: block;
+    font-size: 1.2em;
+}
+
+.project-link a {
+
+    text-decoration: none;
+    color: rgb(255, 230, 0);
+}
+
+.project-extend {
+    background-color: #F9225B;
+}
+
+.project-extend a {
+    color: white;
+}
+
+.project-extend:hover {
+    color: #F9225B;
+    background: white;
+}
+
+.project-extend:hover a{
+    color: #F9225B;
+    text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .display-1 {
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .display-3 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .welcome-text {
+        font-size: 6rem;
+        font-weight: bold;
+        line-height: 1.2;
+    
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #section4 {
+        padding: 5em;
+    }
+
+    #langs .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 5px; 
+    }
+
+   
+
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
